@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>محول العملات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>محول العملات</h1>
+        <label for="amount">المبلغ بالشيقل (NIS):</label>
+        <input type="number" id="amount" placeholder="أدخل المبلغ" />
+        
+        <label for="currency">اختر العملة:</label>
+        <select class="currency">
+            <option value="USD">دولار أمريكي (USD)</option>
+            <option value="JOD">دينار أردني (JOD)</option>
+        </select>
+        
+        <button onclick="convertAndDisplay()">تحويل</button>
+        
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
